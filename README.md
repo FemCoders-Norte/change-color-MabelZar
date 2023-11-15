@@ -16,6 +16,39 @@ No pases a la segunda parte si no tienes resuelta la primera.
 ¿Has realizado la primera parte?
 Ahora refactoriza tu código para que cuando hagas click cambie el color y el texto a "darkblue" y al hacer click de nuevo cambien a "red".
 
+## Instalación de la parte testing
+
+Para poder ejecutar los test has de tener instalado [Node.js](https://nodejs.org/es/). Versión LTS.
+
+Puedes comprobar que lo tienes instalado con el comando:
+
+```
+node -v
+```
+
+Una vez instalado Node.js, has de instalar las dependencias del proyecto (en la carpeta donde tienes todos los documentos del proyecto clonado) con el comando:
+
+```
+npm install
+```
+O 
+```
+npm i
+```
+
+## Ejecución de los test
+
+Para ejecutar los test has de ejecutar el comando:
+
+```
+npm test
+```
+O
+```
+npm t
+```
+
+
 ## ¿Qué aprenderemos?
 
 - Hacer funciones
