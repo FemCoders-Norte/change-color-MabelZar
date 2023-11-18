@@ -21,7 +21,7 @@ Ahora refactoriza tu código para que cuando hagas click cambie el color y el te
 2. Podrás usar el mismo código de la carpeta events.js para ello tendrás que descomentar la importación de la función changeStyles como corresponda.
 3. En la carpeta tests hay un archivo partTwo.test.js que va a testear tus funciones de esta segunda parte. No modifiques este archivo, para mirar si está correctamente resuelto el ejercicio ejecuta en la terminal el comando npm tests y mira que te devuelve. Este archivo te dará algunas pistas de que id's deberás incluir en tu html.
 
-## Instalación de la parte testing
+## Instalación Tests
 
 Para poder ejecutar los test has de tener instalado [Node.js](https://nodejs.org/es/). Versión LTS.
 
