@@ -4,9 +4,7 @@ import { changeColor, changeText, changeStyles } from "../src/js/partOne";
 
 describe("Part I", () => {
   let dom;
-  
   let backgroundMock;
-
   let textMock;
 
   beforeAll(async () => {
@@ -33,7 +31,7 @@ describe("Part I", () => {
     expect(typeof changeColor).toBe("function");
   });
 
-  // in changeColor function, the background color should be darkblue
+  //In changeColor function, the background color should be darkblue
   test("changeColor changes the background color to darkblue", async () => {
     changeColor();
     expect(backgroundMock.style.backgroundColor).toBe("darkblue");
@@ -50,13 +48,13 @@ describe("Part I", () => {
     expect(text.innerHTML).toBe("red");
   });
 
-  // in changeText function, the text should be darkblue
+  //In changeText function, the text should be darkblue
   it("changeText changes the text to darkblue", async () => {
     changeText();
     expect(textMock.innerHTML).toBe("darkblue");
   });
 
-  //simulate click on button function changeStyles
+  //Simulate click on button function changeStyles
   it("changeStyles changes the text and background color to darkblue", async () => {
     changeStyles();
 

@@ -31,7 +31,7 @@ describe("Part II", () => {
     expect(typeof changeColor).toBe("function");
   });
 
-  //simulate click on button function changeStyles
+  //Simulate click on button function changeStyles
   it("changeColor changes the text and background color to darkblue", async () => {
     backgroundMock.style.backgroundColor = "rgb(255, 0, 0)";
     changeStyles();
@@ -46,7 +46,7 @@ describe("Part II", () => {
     expect(typeof changeText).toBe("function");
   });
 
-  //simulate click on button function changeStyles
+  //Simulate click on button function changeStyles
   it("changeText changes the text to darkblue", async () => {
     textMock.innerHTML = "red";
     changeStyles();
@@ -55,7 +55,7 @@ describe("Part II", () => {
     expect(textMock.innerHTML).toBe("red");
   });
 
-  //simulate click on button function changeStyles
+  //Simulate click on button function changeStyles
   it("changeStyles changes the text and background color to darkblue", async () => {
     changeStyles();
 
