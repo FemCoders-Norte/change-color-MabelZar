@@ -1,7 +1,6 @@
 import { describe, expect, it, beforeAll } from "vitest";
 import { JSDOM } from "jsdom";
-import { changeColor, changeText, changeStyles } from "../src/js/partTwo";
-
+import { changeColor, changeText, changeStyles } from "../src/partTwo/js/partTwo";
 describe("Part II", () => {
   let dom;
   let backgroundMock;
@@ -25,13 +24,10 @@ describe("Part II", () => {
     const script = document.querySelector("script");
     expect(script).not.toBeNull();
   });
-
   it("should exist the function changeColor", async () => {
     expect(changeColor).toBeDefined();
     expect(typeof changeColor).toBe("function");
   });
-
-  //Simulate click on button function changeStyles
   it("changeColor changes the text and background color to darkblue", async () => {
     backgroundMock.style.backgroundColor = "rgb(255, 0, 0)";
     changeStyles();
@@ -39,14 +35,10 @@ describe("Part II", () => {
     changeStyles();
     expect(backgroundMock.style.backgroundColor).toBe("red");
  });
-  
-
   it("should exist the function changeText", async () => {
     expect(changeText).toBeDefined();
     expect(typeof changeText).toBe("function");
   });
-
-  //Simulate click on button function changeStyles
   it("changeText changes the text to darkblue", async () => {
     textMock.innerHTML = "red";
     changeStyles();
@@ -54,8 +46,6 @@ describe("Part II", () => {
     changeStyles();
     expect(textMock.innerHTML).toBe("red");
   });
-
-  //Simulate click on button function changeStyles
   it("changeStyles changes the text and background color to darkblue", async () => {
     changeStyles();
 
